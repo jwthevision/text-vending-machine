@@ -3,10 +3,10 @@ import java.util.Scanner;
 public class Main {
   
   static void checkTotal(int total) {
-        if (total < 0) {
-          throw new ArithmeticException("Please pay the correct balance to receive your guitar. ");
-        }
-  }
+        //if (total >= -100) {
+        //  throw new ArithmeticException("Please pay the correct balance to receive your guitar. ");
+       }
+  
   public static void main(String[] args) {
 
     Scanner scanner = new Scanner(System.in);
@@ -29,6 +29,8 @@ public class Main {
     machineInterface.displayChangeMessage();
 
     //checkTotal(-20);
+
+    scanner.close();
     
   }
 }
